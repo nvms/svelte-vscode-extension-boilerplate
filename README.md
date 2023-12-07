@@ -2,6 +2,12 @@
 
 This is a boilerplate for building a Visual Studio Code extension. This extension has a Webview that hosts a Svelte application. It's based on the Wingman extension: https://github.com/nvms/wingman
 
+<center>
+
+![image](.github/media/preview.gif)
+
+</center>
+
 # Development
 
 1. In `/webview`: `npm run dev`. This is a Svelte project that outputs to `/extension/dist`.
