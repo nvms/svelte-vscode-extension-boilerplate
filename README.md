@@ -4,7 +4,7 @@ This is a boilerplate for building a Visual Studio Code extension. This extensio
 
 <center>
 
-![image](.github/media/preview.gif)
+![image](.github/media/preview.png)
 
 </center>
 
