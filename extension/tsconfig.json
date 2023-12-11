@@ -14,7 +14,6 @@
     "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "types": ["vite/client"],
     "rootDir": ".",
   },
 }
