@@ -27,7 +27,8 @@
     "build:browser": "tsx scripts/esbuild.ts --browser",
     "build:watch": "tsx scripts/esbuild.ts --watch",
     "package": "vsce package --no-dependencies",
-    "publish": "vsce publish --no-dependencies"
+    "publish": "vsce publish --no-dependencies",
+    "release": "bumpp -c \"Release v%s\" package.json"
   },
   "contributes": {
     "commands": [],

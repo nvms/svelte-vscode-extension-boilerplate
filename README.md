@@ -15,3 +15,7 @@ This is a boilerplate for building a Visual Studio Code extension. This extensio
 3. Run the extension using the debug panel.
 
 The `dev` script in `/webview` runs both `vite` and `vite build --watch`. This is so that you can use either http://localhost:5173 (with HMR) or the VSCode extension host (no HMR) to build your UI.
+
+# Releasing
+
+Run the `release` script in `/extension` to bump package.json, create a git tag and push changes to the remote origin. There's a Github workflow that, on tag, builds the extension and publishes to the Visual Studio Marketplace. You'll need to set the repo secret `VS_MARKETPLACE_TOKEN` to your PAT.
