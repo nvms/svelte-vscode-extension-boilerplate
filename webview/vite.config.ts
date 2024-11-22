@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import { svelte } from "@sveltejs/vite-plugin-svelte";
-import sveltePreprocess from "svelte-preprocess"
+import sveltePreprocess from "svelte-preprocess";
 import tailwind from "tailwindcss";
 import nested from "postcss-nested";
 import autoprefixer from "autoprefixer";
@@ -11,7 +11,7 @@ export default defineConfig({
     alias: [{ find: "@", replacement: join(process.cwd(), "src") }],
   },
   define: {
-    "__APP_ENV__": JSON.stringify(process.env.NODE_ENV),
+    __APP_ENV__: JSON.stringify(process.env.NODE_ENV),
   },
   plugins: [
     svelte({
@@ -21,7 +21,7 @@ export default defineConfig({
         },
         replace: [
           ["process.env.NODE_ENV", JSON.stringify(process.env.NODE_ENV)],
-        ]
+        ],
       }),
     }),
   ],
