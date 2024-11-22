@@ -23,8 +23,7 @@
   "main": "dist/extension.umd.js",
   "browser": "dist/extension.browser.js",
   "scripts": {
-    "build": "tsx scripts/esbuild.ts",
-    "build:browser": "tsx scripts/esbuild.ts --browser",
+    "build": "tsx scripts/esbuild.ts && tsx scripts/esbuild.ts --browser",
     "build:watch": "tsx scripts/esbuild.ts --watch",
     "package": "vsce package --no-dependencies",
     "publish": "vsce publish --no-dependencies",
@@ -63,7 +62,7 @@
     "typescript": "^5.3.3"
   },
   "engines": {
-    "vscode": "^1.76.2"
+    "vscode": "^1.84.2"
   },
   "icon": "assets/logo.png"
 }
